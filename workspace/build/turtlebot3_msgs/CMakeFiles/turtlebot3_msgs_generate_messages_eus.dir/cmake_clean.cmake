@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/menatalh/workspace/devel/share/roseus/ros/turtlebot3_msgs/manifest.l"
-  "/home/menatalh/workspace/devel/share/roseus/ros/turtlebot3_msgs/msg/SensorState.l"
-  "/home/menatalh/workspace/devel/share/roseus/ros/turtlebot3_msgs/msg/Sound.l"
-  "/home/menatalh/workspace/devel/share/roseus/ros/turtlebot3_msgs/msg/VersionInfo.l"
+  "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel/share/roseus/ros/turtlebot3_msgs/manifest.l"
+  "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel/share/roseus/ros/turtlebot3_msgs/msg/SensorState.l"
+  "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel/share/roseus/ros/turtlebot3_msgs/msg/Sound.l"
+  "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel/share/roseus/ros/turtlebot3_msgs/msg/VersionInfo.l"
   "CMakeFiles/turtlebot3_msgs_generate_messages_eus"
 )
 

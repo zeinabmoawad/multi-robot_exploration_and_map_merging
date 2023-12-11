@@ -1,4 +1,4 @@
-prefix=/home/menatalh/workspace/install
+prefix=/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/install
 
 Name: turtlebot3_gazebo
 Description: Description of turtlebot3_gazebo

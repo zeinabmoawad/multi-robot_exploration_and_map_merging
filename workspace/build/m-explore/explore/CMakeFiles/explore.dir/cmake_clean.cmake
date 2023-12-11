@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/menatalh/workspace/devel/lib/explore_lite/explore"
-  "/home/menatalh/workspace/devel/lib/explore_lite/explore.pdb"
+  "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel/lib/explore_lite/explore"
+  "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel/lib/explore_lite/explore.pdb"
   "CMakeFiles/explore.dir/src/costmap_client.cpp.o"
   "CMakeFiles/explore.dir/src/explore.cpp.o"
   "CMakeFiles/explore.dir/src/frontier_search.cpp.o"

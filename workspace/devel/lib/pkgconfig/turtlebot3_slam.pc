@@ -1,8 +1,8 @@
-prefix=/home/menatalh/workspace/devel
+prefix=/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel
 
 Name: turtlebot3_slam
 Description: Description of turtlebot3_slam
 Version: 1.2.6
-Cflags: -I/home/menatalh/workspace/src/turtlebot3/turtlebot3_slam/include
+Cflags: -I/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/src/turtlebot3/turtlebot3_slam/include
 Libs: -L${prefix}/lib 
 Requires: roscpp sensor_msgs

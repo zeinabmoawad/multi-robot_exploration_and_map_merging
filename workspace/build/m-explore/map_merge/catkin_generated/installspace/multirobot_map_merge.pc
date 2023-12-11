@@ -1,4 +1,4 @@
-prefix=/home/menatalh/workspace/install
+prefix=/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/install
 
 Name: multirobot_map_merge
 Description: Description of multirobot_map_merge

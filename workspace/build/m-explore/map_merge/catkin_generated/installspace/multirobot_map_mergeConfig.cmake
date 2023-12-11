@@ -67,14 +67,14 @@ set(multirobot_map_merge_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(multirobot_map_merge_SOURCE_PREFIX /home/menatalh/workspace/src/m-explore/map_merge)
-  set(multirobot_map_merge_DEVEL_PREFIX /home/menatalh/workspace/devel)
+  set(multirobot_map_merge_SOURCE_PREFIX /home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/src/m-explore/map_merge)
+  set(multirobot_map_merge_DEVEL_PREFIX /home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel)
   set(multirobot_map_merge_INSTALL_PREFIX "")
   set(multirobot_map_merge_PREFIX ${multirobot_map_merge_DEVEL_PREFIX})
 else()
   set(multirobot_map_merge_SOURCE_PREFIX "")
   set(multirobot_map_merge_DEVEL_PREFIX "")
-  set(multirobot_map_merge_INSTALL_PREFIX /home/menatalh/workspace/install)
+  set(multirobot_map_merge_INSTALL_PREFIX /home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/install)
   set(multirobot_map_merge_PREFIX ${multirobot_map_merge_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/menatalh/workspace/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/install/lib;/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel/lib;/home/zeianbmoawad/Robotics/Project/turtlebot/devel/lib;/home/zeianbmoawad/Robotics/Project/summitxl/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

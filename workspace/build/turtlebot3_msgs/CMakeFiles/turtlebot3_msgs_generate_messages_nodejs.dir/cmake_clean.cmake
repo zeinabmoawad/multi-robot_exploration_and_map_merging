@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/menatalh/workspace/devel/share/gennodejs/ros/turtlebot3_msgs/msg/SensorState.js"
-  "/home/menatalh/workspace/devel/share/gennodejs/ros/turtlebot3_msgs/msg/Sound.js"
-  "/home/menatalh/workspace/devel/share/gennodejs/ros/turtlebot3_msgs/msg/VersionInfo.js"
+  "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel/share/gennodejs/ros/turtlebot3_msgs/msg/SensorState.js"
+  "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel/share/gennodejs/ros/turtlebot3_msgs/msg/Sound.js"
+  "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel/share/gennodejs/ros/turtlebot3_msgs/msg/VersionInfo.js"
   "CMakeFiles/turtlebot3_msgs_generate_messages_nodejs"
 )
 

@@ -7,10 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/menatalh/workspace/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/menatalh/workspace/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/menatalh/workspace/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD='/home/menatalh/workspace/build'
-export PYTHONPATH="/home/menatalh/workspace/devel/lib/python3/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES='/home/menatalh/workspace/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/menatalh/workspace/src:$ROS_PACKAGE_PATH"
+export LD_LIBRARY_PATH='/home/zeianbmoawad/Robotics/Project/turtlebot/devel/lib:/home/zeianbmoawad/Robotics/Project/summitxl/devel/lib:/opt/ros/noetic/lib'
+export PKG_CONFIG_PATH='/home/zeianbmoawad/Robotics/Project/turtlebot/devel/lib/pkgconfig:/home/zeianbmoawad/Robotics/Project/summitxl/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'
+export PWD='/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/build'
+export PYTHONPATH='/home/zeianbmoawad/Robotics/Project/turtlebot/devel/lib/python3/dist-packages:/home/zeianbmoawad/Robotics/Project/summitxl/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages'
