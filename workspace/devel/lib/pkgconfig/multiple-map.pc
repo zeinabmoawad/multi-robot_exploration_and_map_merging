@@ -1,0 +1,8 @@
+prefix=/home/menatalh/workspace/devel
+
+Name: multiple-map
+Description: Description of multiple-map
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
