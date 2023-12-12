@@ -11,6 +11,10 @@
         <arg name="ns" value="tb3_2"/>
     </include>
 
+    <include file="$(find multiple-map)/launch/multi_map_merge.launch">
+    
+    </include>
+
     <node pkg="rviz" type="rviz" name="rviz" args="-d $(find multiple-map)/rviz/multi_turtlebot3_slam.rviz">
     </node>
 </launch>

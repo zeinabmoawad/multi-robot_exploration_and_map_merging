@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/home/zeianbmoawad/Robotics/Project/turtlebot/devel/lib:/home/zeianbmoawad/Robotics/Project/summitxl/devel/lib:/opt/ros/noetic/lib'
-export PKG_CONFIG_PATH='/home/zeianbmoawad/Robotics/Project/turtlebot/devel/lib/pkgconfig:/home/zeianbmoawad/Robotics/Project/summitxl/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'
-export PWD='/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/build'
-export PYTHONPATH='/home/zeianbmoawad/Robotics/Project/turtlebot/devel/lib/python3/dist-packages:/home/zeianbmoawad/Robotics/Project/summitxl/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages'
+export CMAKE_PREFIX_PATH="/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/devel:$CMAKE_PREFIX_PATH"
+export PWD='/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/build'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/src:$ROS_PACKAGE_PATH"

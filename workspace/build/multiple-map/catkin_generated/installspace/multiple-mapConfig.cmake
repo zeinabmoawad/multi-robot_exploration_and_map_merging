@@ -67,14 +67,14 @@ set(multiple-map_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(multiple-map_SOURCE_PREFIX /home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/src/multiple-map)
-  set(multiple-map_DEVEL_PREFIX /home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel)
+  set(multiple-map_SOURCE_PREFIX /home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/src/multiple-map)
+  set(multiple-map_DEVEL_PREFIX /home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/devel)
   set(multiple-map_INSTALL_PREFIX "")
   set(multiple-map_PREFIX ${multiple-map_DEVEL_PREFIX})
 else()
   set(multiple-map_SOURCE_PREFIX "")
   set(multiple-map_DEVEL_PREFIX "")
-  set(multiple-map_INSTALL_PREFIX /home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/install)
+  set(multiple-map_INSTALL_PREFIX /home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/install)
   set(multiple-map_PREFIX ${multiple-map_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/install/lib;/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel/lib;/home/zeianbmoawad/Robotics/Project/turtlebot/devel/lib;/home/zeianbmoawad/Robotics/Project/summitxl/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/install/lib;/home/ahmed/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

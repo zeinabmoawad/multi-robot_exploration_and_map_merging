@@ -1,8 +1,8 @@
-# Install script for directory: /home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/src/turtlebot3/turtlebot3_navigation
+# Install script for directory: /home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/src/turtlebot3/turtlebot3_navigation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,26 +38,26 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/build/turtlebot3/turtlebot3_navigation/catkin_generated/installspace/turtlebot3_navigation.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/build/turtlebot3/turtlebot3_navigation/catkin_generated/installspace/turtlebot3_navigation.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_navigation/cmake" TYPE FILE FILES
-    "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/build/turtlebot3/turtlebot3_navigation/catkin_generated/installspace/turtlebot3_navigationConfig.cmake"
-    "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/build/turtlebot3/turtlebot3_navigation/catkin_generated/installspace/turtlebot3_navigationConfig-version.cmake"
+    "/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/build/turtlebot3/turtlebot3_navigation/catkin_generated/installspace/turtlebot3_navigationConfig.cmake"
+    "/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/build/turtlebot3/turtlebot3_navigation/catkin_generated/installspace/turtlebot3_navigationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_navigation" TYPE FILE FILES "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/src/turtlebot3/turtlebot3_navigation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_navigation" TYPE FILE FILES "/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/src/turtlebot3/turtlebot3_navigation/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_navigation" TYPE DIRECTORY FILES
-    "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/src/turtlebot3/turtlebot3_navigation/launch"
-    "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/src/turtlebot3/turtlebot3_navigation/maps"
-    "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/src/turtlebot3/turtlebot3_navigation/param"
-    "/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/src/turtlebot3/turtlebot3_navigation/rviz"
+    "/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/src/turtlebot3/turtlebot3_navigation/launch"
+    "/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/src/turtlebot3/turtlebot3_navigation/maps"
+    "/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/src/turtlebot3/turtlebot3_navigation/param"
+    "/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/src/turtlebot3/turtlebot3_navigation/rviz"
     )
 endif()
 

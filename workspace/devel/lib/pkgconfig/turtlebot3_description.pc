@@ -1,4 +1,4 @@
-prefix=/home/zeianbmoawad/Robotics/Project/repo/multi-robot_exploration_and_map_merging/workspace/devel
+prefix=/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/devel
 
 Name: turtlebot3_description
 Description: Description of turtlebot3_description
