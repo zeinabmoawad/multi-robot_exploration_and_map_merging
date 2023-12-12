@@ -7,19 +7,19 @@
   <!-- move_base -->
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
     <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
-    <!-- <rosparam file="$(find multiple-map)/param/$(arg ns)/costmap_common_params_$(arg model).yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find multiple-map)/param/$(arg ns)/costmap_common_params_$(arg model).yaml" command="load" ns="global_costmap" />
     <rosparam file="$(find multiple-map)/param/$(arg ns)/costmap_common_params_$(arg model).yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find multiple-map)/param/$(arg ns)/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find multiple-map)/param/$(arg ns)/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find multiple-map)/param/$(arg ns)/move_base_params.yaml" command="load" />
     <rosparam file="$(find multiple-map)/param/$(arg ns)/dwa_local_planner_params_$(arg model).yaml" command="load" />
-     -->
-    <rosparam file="$(find turtlebot3_navigation)/param/costmap_common_params_$(arg model).yaml" command="load" ns="global_costmap" />
+    
+    <!-- <rosparam file="$(find turtlebot3_navigation)/param/costmap_common_params_$(arg model).yaml" command="load" ns="global_costmap" />
     <rosparam file="$(find turtlebot3_navigation)/param/costmap_common_params_$(arg model).yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find turtlebot3_navigation)/param/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find turtlebot3_navigation)/param/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find turtlebot3_navigation)/param/move_base_params.yaml" command="load" />
-    <rosparam file="$(find turtlebot3_navigation)/param/dwa_local_planner_params_$(arg model).yaml" command="load" />
+    <rosparam file="$(find turtlebot3_navigation)/param/dwa_local_planner_params_$(arg model).yaml" command="load" /> -->
     
     <remap from="map" to="/map"/>
     <param name="DWAPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />
