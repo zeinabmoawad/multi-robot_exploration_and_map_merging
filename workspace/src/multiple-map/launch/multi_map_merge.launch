@@ -3,6 +3,37 @@
   <arg name="second_tb3" default="tb3_1"/>
   <arg name="third_tb3"  default="tb3_2"/>
 
+  <!-- <arg name="first_tb3_x_pos" default="-7.0"/>
+  <arg name="first_tb3_y_pos" default=" -3.0"/>
+  <arg name="first_tb3_z_pos" default=" 0.0"/>
+  <arg name="first_tb3_yaw"   default=" 0.0"/>
+
+  <arg name="second_tb3_x_pos" default=" -2.0"/>
+  <arg name="second_tb3_y_pos" default=" -14.5"/>
+  <arg name="second_tb3_z_pos" default=" 0.0"/>
+  <arg name="second_tb3_yaw"   default=" 0.0"/>
+
+  <arg name="third_tb3_x_pos" default=" 6.0"/>
+  <arg name="third_tb3_y_pos" default=" 1.0"/>
+  <arg name="third_tb3_z_pos" default=" 0.0"/>
+  <arg name="third_tb3_yaw"   default=" 0.0"/> -->
+
+<!-- outside map bounds -->
+  <!-- <arg name="first_tb3_x_pos" default="-7.0"/>
+  <arg name="first_tb3_y_pos" default="-14.0"/>
+  <arg name="first_tb3_z_pos" default=" 0.0"/>
+  <arg name="first_tb3_yaw"   default=" 0.0"/>
+
+  <arg name="second_tb3_x_pos" default=" -2.0"/>
+  <arg name="second_tb3_y_pos" default="-14.0"/>
+  <arg name="second_tb3_z_pos" default=" 0.0"/>
+  <arg name="second_tb3_yaw"   default=" 0.0"/>
+
+  <arg name="third_tb3_x_pos" default=" 6.5"/>
+  <arg name="third_tb3_y_pos" default=" -14.0"/>
+  <arg name="third_tb3_z_pos" default=" 0.0"/>
+  <arg name="third_tb3_yaw"   default=" 0.0"/> -->
+  <!-- inside map bounds -->
   <arg name="first_tb3_x_pos" default="-7.0"/>
   <arg name="first_tb3_y_pos" default="-1.0"/>
   <arg name="first_tb3_z_pos" default=" 0.0"/>
@@ -58,7 +89,13 @@
   <node pkg="tf" type="static_transform_publisher" name="world_to_$(arg first_tb3)_tf_broadcaster"  args="0 0 0 0 0 0 /map /$(arg first_tb3)/map 100"/>
   <node pkg="tf" type="static_transform_publisher" name="world_to_$(arg second_tb3)_tf_broadcaster" args="0 0 0 0 0 0 /map /$(arg second_tb3)/map 100"/>
   <node pkg="tf" type="static_transform_publisher" name="world_to_$(arg third_tb3)_tf_broadcaster" args="0 0 0 0 0 0 /map /$(arg third_tb3)/map 100"/>
-  
+
+  <!-- <node pkg="tf" type="static_transform_publisher" name="world_to_$(arg first_tb3)_tf_broadcaster"  args="$(arg first_tb3_x_pos) $(arg first_tb3_y_pos) $(arg first_tb3_z_pos) $(arg first_tb3_yaw) 0 0 /map /$(arg first_tb3)/map 100"/>
+  <node pkg="tf" type="static_transform_publisher" name="world_to_$(arg second_tb3)_tf_broadcaster" args="$(arg second_tb3_x_pos) $(arg second_tb3_y_pos) $(arg second_tb3_z_pos) $(arg second_tb3_yaw) 0 0 /map /$(arg second_tb3)/map 100"/>
+  <node pkg="tf" type="static_transform_publisher" name="world_to_$(arg third_tb3)_tf_broadcaster" args="$(arg third_tb3_x_pos) $(arg third_tb3_y_pos) $(arg third_tb3_z_pos) $(arg third_tb3_yaw) 0 0 /map /$(arg third_tb3)/map 100"/> -->
+   
+
+
    <!-- <node pkg="tf" type="static_transform_publisher" name="world_to_$(arg first_tb3)_tf_broadcaster"  args="0 0 0 0 0 0 /map /$(arg first_tb3)/$(arg first_tb3)/map 100"/> -->
   <!-- <node pkg="tf" type="static_transform_publisher" name="world_to_$(arg second_tb3)_tf_broadcaster" args="0 0 0 0 0 0 /map /$(arg second_tb3)/$(arg second_tb3)/map 100"/> -->
   <!-- <node pkg="tf" type="static_transform_publisher" name="world_to_$(arg third_tb3)_tf_broadcaster" args="0 0 0 0 0 0 /map /$(arg third_tb3)/$(arg third_tb3)/map 100"/> -->
