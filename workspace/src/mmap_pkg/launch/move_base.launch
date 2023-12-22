@@ -1,0 +1,33 @@
+
+<launch>
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="move_forward_only" default="false"/>
+  <arg name="ns" default="tb3_0"/>
+<group ns='$(arg ns)'>
+
+
+  
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
+    <rosparam file="$(find mmap_pkg)/param/$(arg ns)/costmap_common_params_$(arg model).yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find mmap_pkg)/param/$(arg ns)/costmap_common_params_$(arg model).yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find mmap_pkg)/param/$(arg ns)/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find mmap_pkg)/param/$(arg ns)/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find mmap_pkg)/param/$(arg ns)/move_base_params.yaml" command="load" />
+    <rosparam file="$(find mmap_pkg)/param/$(arg ns)/dwa_local_planner_params_$(arg model).yaml" command="load" />
+    
+  
+    <remap from="/map" to="$(arg ns)/map"/>
+    <remap from="robot_base_frame" to="$(arg ns)/base_footprint" />
+
+    <!-- <remap from="robot_base_frame" to="$(arg ns)/base_footprint" />
+    <remap from="/map" to="$(arg ns)/map" /> -->
+    <param name="DWAPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />
+  </node>
+
+  <include file="$(find mmap_pkg)/launch/explore.launch">
+  </include>
+
+  </group>
+</launch>
+

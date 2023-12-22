@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/ahmed/Desktop/multi-robot_exploration_and_map_merging/w
 
 # The main recursive "all" target.
 all: gtest/all
+all: mmap_pkg/all
 all: multiple-map/all
 all: turtlebot3/turtlebot3/all
 all: turtlebot3_msgs/all
@@ -73,6 +74,7 @@ all: turtlebot3/turtlebot3_description/all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
+preinstall: mmap_pkg/preinstall
 preinstall: multiple-map/preinstall
 preinstall: turtlebot3/turtlebot3/preinstall
 preinstall: turtlebot3_msgs/preinstall
@@ -97,6 +99,7 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
+clean: mmap_pkg/clean
 clean: multiple-map/clean
 clean: turtlebot3/turtlebot3/clean
 clean: turtlebot3_msgs/clean
@@ -291,6 +294,24 @@ m-explore/map_merge/clean: m-explore/map_merge/CMakeFiles/clean_test_results_mul
 .PHONY : m-explore/map_merge/clean
 
 #=============================================================================
+# Directory level rules for directory mmap_pkg
+
+# Recursive "all" directory target.
+mmap_pkg/all:
+
+.PHONY : mmap_pkg/all
+
+# Recursive "preinstall" directory target.
+mmap_pkg/preinstall:
+
+.PHONY : mmap_pkg/preinstall
+
+# Recursive "clean" directory target.
+mmap_pkg/clean: mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+.PHONY : mmap_pkg/clean
+
+#=============================================================================
 # Directory level rules for directory multiple-map
 
 # Recursive "all" directory target.
@@ -304,7 +325,7 @@ multiple-map/preinstall:
 .PHONY : multiple-map/preinstall
 
 # Recursive "clean" directory target.
-multiple-map/clean: multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/clean
+multiple-map/clean:
 
 .PHONY : multiple-map/clean
 
@@ -831,31 +852,31 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target multiple-map/CMakeFiles/_catkin_empty_exported_target.dir
+# Target rules for target mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir
 
 # All Build rule for target.
-multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/build.make multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/build.make multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/build
+mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/build.make mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/build.make mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/all
+.PHONY : mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/all
 
 # Build rule for subdir invocation for target.
-multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/build/CMakeFiles 0
-.PHONY : multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
-_catkin_empty_exported_target: multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/rule
+_catkin_empty_exported_target: mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 .PHONY : _catkin_empty_exported_target
 
 # clean rule for target.
-multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/build.make multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/clean
+mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/build.make mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 #=============================================================================
 # Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genpy.dir
@@ -5491,7 +5512,7 @@ m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean:
 # Target rules for target m-explore/explore/CMakeFiles/explore.dir
 
 # All Build rule for target.
-m-explore/explore/CMakeFiles/explore.dir/all: multiple-map/CMakeFiles/_catkin_empty_exported_target.dir/all
+m-explore/explore/CMakeFiles/explore.dir/all: mmap_pkg/CMakeFiles/_catkin_empty_exported_target.dir/all
 m-explore/explore/CMakeFiles/explore.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 m-explore/explore/CMakeFiles/explore.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 m-explore/explore/CMakeFiles/explore.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all

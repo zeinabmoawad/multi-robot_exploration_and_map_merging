@@ -1,0 +1,8 @@
+prefix=/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/install
+
+Name: mmap_pkg
+Description: Description of mmap_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

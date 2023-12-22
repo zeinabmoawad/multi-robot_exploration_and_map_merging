@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/build/gtest/cmake_install.cmake")
+  include("/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/build/mmap_pkg/cmake_install.cmake")
   include("/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/build/multiple-map/cmake_install.cmake")
   include("/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/build/turtlebot3/turtlebot3/cmake_install.cmake")
   include("/home/ahmed/Desktop/multi-robot_exploration_and_map_merging/workspace/build/turtlebot3_msgs/cmake_install.cmake")
